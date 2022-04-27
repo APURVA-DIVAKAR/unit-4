@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 40%;
+            margin :auto;
+            background-color:palevioletred;
+            margin-top :100px;
+            border-radius: 50px;
+            color:cornsilk
+        }
+        #ID{
+          margin :auto;
+          width:20%;
+          color:cornsilk
+        }
+        #counter{
+            font-size :60px;
+            margin-bottom: -10px;
+            margin-left: 50px;
+            color:cornsilk
+        }
+        button{
+          font-size :23px;
+          background-color:thistle;
+          color:cornsilk
+         
+        }
+        #flex>div{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap:20px;
+            color:cornsilk
+        }
+        #flex{
+            display:flex;
+            justify-content:space-around;
+            color:cornsilk
+        }
+        input{
+            width:80px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 100px;
+            background-color:thistle;
+            font-size:25px;
+            color:cornsilk
+        }
+    </style>
+</head>
+<body>
+ <div id="container">
+    <div id="ID"> 
+        <h1 id="counter"></h1>
+        <button id="inc">INC</button>
+        <button id="dec">Dec</button>
+      </div>
+      <div id="flex">
+          <input type="number" id="X" placeholder="X"/>
+          <div>
+              <button id="add">Add</button>
+              <button id="multi">Multiply</button>
+              <button id="divide">Divide</button>
+              <button id="sub">Subtract</button>
+          </div>
+      </div>
+ </div>
+</body>
+</html>
+<script type="module" src="./index.js">
+
+</script>
